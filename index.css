@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: helvetica,arial,sans-serif;
+    display: block;
+    overflow: hidden;
+    width:500px;
+    margin: 15px;
+    border-radius: 3px;
+    background-color: #ddd;
+}
+form.searchForm{
+    /*包含label和input的容器*/
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+}
+form.searchForm input{
+    opacity: 0.1;
+    width: 400px;
+    padding: 2px 0 3px 5px;
+    outline: none;
+    font-size: 1.2em;
+    border-color: #eee #ccc #ccc #eee;
+    border-radius: 10px;
+    /*针对webkit内核的浏览器的厂商前缀*/
+    height: 100px;
+    background-color: red;
+    opacity: 1;
+    -webkit-transition:0.5s transform;
+}
+form.searchForm input:focus{
+    width: 150px;   /*如果失去焦点，则缩回原来长度*/
+    height: 100px;
+    opacity:1;
+}
+
+form.searchForm input:active{
+    width: 10px;   /*如果失去焦点，则缩回原来长度*/
+    height: 100px;
+    opacity:1;
+}
+
+form.searchForm input.test{
+    width: 100px;   /*如果失去焦点，则缩回原来长度*/
+    height: 100px;
+    opacity:1;
+    -webkit-transform:translate(10px,10px);
+
+    transform:translate(10px,10px);
+}
+form.searchForm label{
+    display: none;  /*标注是必要的，但不用显示出来*/
+}
+
+
+h1{
+  clear:both;
+  padding-top:10px;
+  font-size:16px;
+  font-family:Arial;
+
+}
+.test{
+  zoom:1;
+  width:700px;
+  margin:0;
+  padding:0;
+  list-style:none;}
+.test li{float:left;
+  margin:20px 30px 0 0;
+  border:1px solid #000;}
+.test li p {
+  width:300px;
+  height:100px;
+  margin:0;
+  background:#ddd;}
+  .test .matrix{
+
+    -webkit-transform:translate(10px,10px);
+
+    transform:translate(10px,10px);
+  }
